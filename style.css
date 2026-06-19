@@ -123,3 +123,35 @@ h6 {
   text-align: center;
   color: white;
 }
+
+.main-text {
+  width: 80%;
+}
+
+.main-text,
+.main-content > p {
+  font-weight: 600;
+  font-size: clamp(0.7rem, calc(0.4rem + 1vw), 3rem);
+  padding-right: 15vw;
+}
+
+.main-text > p:first-child {
+  margin: 70px 25px 0;
+}
+
+.main-text > p:nth-child(2) {
+  margin: 25px;
+}
+
+form fieldset {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 10px #dadadc;
+  margin: 0;
+  padding: 25px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}

@@ -17,37 +17,44 @@
       </div>
     </div>
     <div class="main-content">
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <em>now</em> to get started.
-      </p>
-      <p>You <em>know</em> you want to.</p>
+      <div class="main-text">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
       <form action="#" method="post">
         <fieldset>
           <legend>Let's do this!</legend>
+          <div class="group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" />
 
-          <label for="first-name">First name</label>
-          <input type="text" name="first-name" id="first-name" />
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
 
-          <label for="last-name">Last name</label>
-          <input type="text" name="last-name" id="last-name" />
+          <div class="group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
 
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" id="phone-number" />
+          </div>
 
-          <label for="phone-number">Phone number</label>
-          <input type="text" name="phone-number" id="phone-number" />
+          <div class="group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
 
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-
-          <label for="confirm-password">Confirm password</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-          />
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
         </fieldset>
       </form>
 

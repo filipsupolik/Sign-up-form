@@ -24,6 +24,9 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 6. Improve media defaults */
@@ -84,6 +87,39 @@ h6 {
   font-display: swap;
 }
 
+.side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./resources/microsoft-copilot-qUJ8fgoaLTg-unsplash.jpg");
+  width: 25%;
+  min-height: 100dvh;
+  background-size: cover;
+}
+
+.odin-logo {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.odin-logo > img {
+  height: 80%;
+}
+
 .logo-text {
   font-family: "Norse Sans Runic", sans-serif;
+  font-size: 5.6rem;
+  color: white;
+}
+
+.copyright {
+  margin: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
 }

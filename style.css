@@ -144,6 +144,8 @@ h6 {
 }
 
 form fieldset {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border: none;
   box-shadow: 0 5px 10px #dadadc;
@@ -151,7 +153,63 @@ form fieldset {
   padding: 25px;
 }
 
-.group {
+.row {
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-color: #e5e7eb;
+}
+
+input {
+  border: solid #e5e7eb;
+  border-radius: 15px;
+  width: 100%;
+  flex: 1;
+}
+
+input:user-invalid {
+  border: solid #dc2626;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+button {
+  font-size: 1rem;
+  width: 200px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 14px;
+  border: 0;
+  background-color: #596d48;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.main-content > p:last-child {
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
 }

@@ -25,40 +25,60 @@
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form action="#" method="post">
+      <form action="#" method="post" id="sign-up">
         <fieldset>
           <legend>Let's do this!</legend>
-          <div class="group">
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name" />
+          <div class="row">
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
 
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="last-name" />
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
           </div>
 
-          <div class="group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+          <div class="row">
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
 
-            <label for="phone-number">Phone number</label>
-            <input type="text" name="phone-number" id="phone-number" />
+            <div class="input">
+              <label for="phone-number">Phone number</label>
+              <input type="text" name="phone-number" id="phone-number" />
+            </div>
           </div>
 
-          <div class="group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+          <div class="row">
+            <div class="input">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                required
+              />
+            </div>
 
-            <label for="confirm-password">Confirm password</label>
-            <input
-              type="password"
-              name="confirm-password"
-              id="confirm-password"
-            />
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                minlength="8"
+                required
+              />
+            </div>
           </div>
         </fieldset>
       </form>
 
-      <button type="submit">Create account</button>
+      <button type="submit" form="sign-up">Create account</button>
       <p>Already have and account? <a href="#">Log in</a></p>
     </div>
   </body>
